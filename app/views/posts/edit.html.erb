@@ -1,0 +1,11 @@
+<h1>Edit your Post!</h1>
+
+<%= form_for @post do |f| %>
+	<%= f.label :title %> <%= f.text_field :title %>
+	<%= f.label :body %> <%= f.text_field :body %>
+
+	<%= f.submit "Submit your changes!" %>
+
+<% end %><br />
+
+<%= link_to "Back to the list!", posts_path %>

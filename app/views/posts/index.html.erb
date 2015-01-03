@@ -1,2 +1,14 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<h1>Today's Reported Lost Pets!</h1>
+<h2><img src="http://rideons.files.wordpress.com/2013/04/img_3399-final.jpg"></h2>
+
+<ul>
+
+	<% @posts.each do |p| %>
+
+		<li>
+			<strong><%= p.title %></strong> -- <%= p.body %> <%= link_to "More info", post_path(p) %>
+		</li>
+		
+	<% end %>
+
+</ul>

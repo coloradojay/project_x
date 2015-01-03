@@ -1,2 +1,7 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<h1> <%= @post.title %> that you reported!</h1>
+
+<p>Your post title <%= @post.title %>, was reported as <%= @post.body %>.</p>
+
+<%=  link_to "Edit your post!", edit_post_path %>
+
+<%= link_to "Back to the list!", posts_path %>
