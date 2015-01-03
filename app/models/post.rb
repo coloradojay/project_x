@@ -4,4 +4,6 @@ class Post
   field :pet_type, type: String
   field :body, type: String
   field :url, type: String
+
+  belongs_to :user
 end
