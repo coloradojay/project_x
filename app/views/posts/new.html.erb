@@ -1,7 +1,8 @@
 <h1>Let's find your pet, please add it to the list!</h1>
 
-<%= form_for @bike do |f| %>
+<%= form_for @post do |f| %>
 	<%= f.label :title %> <%= f.text_field :title %>
+	<%= f.label :pet_type %> <%= f.text_field :pet_type %>
 	<%= f.label :body %> <%= f.text_field :body %>
 
 	<%= f.submit "Let's find your pet!" %>

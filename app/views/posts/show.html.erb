@@ -4,4 +4,6 @@
 
 <%=  link_to "Edit your post!", edit_post_path %>
 
+<%= link_to "Delete this post!", :post, method: :delete, data: { confirm: "Are you sure you want to delete your post?" } %>
+
 <%= link_to "Back to the list!", posts_path %>

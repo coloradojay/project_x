@@ -1,6 +1,7 @@
 class Post
   include Mongoid::Document
   field :title, type: String
+  field :pet_type, type: String
   field :body, type: String
   field :url, type: String
 end
