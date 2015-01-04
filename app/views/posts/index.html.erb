@@ -6,7 +6,8 @@
 	<% @posts.each do |p| %>
 
 		<li>
-			<strong><%= p.title %></strong> -- <%= p.body %> <%= link_to "More info", post_path(p) %>
+			<strong><%= p.title %></strong> -- <%= p.body %> 
+			<%= link_to "More info", post_path(p) %>
 		</li>
 		
 	<% end %>

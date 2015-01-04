@@ -5,6 +5,9 @@
 	<%= f.label :pet_type %> <%= f.text_field :pet_type %>
 	<%= f.label :body %> <%= f.text_field :body %>
 
+	<%= f.label :user %>
+	<%= f.collection_select :user, User.all, :id, :name %>
+
 
 	<%= f.submit "Let's find your pet!" %>
 
