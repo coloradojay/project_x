@@ -13,6 +13,15 @@
 	<% end %>
 
 </ul>
-
-<a href="posts/new">Add a lost/stranded pet</a><br />
-<a href="users/new">Sign Up to report a lost or stranded pet!</a>
+<div class="row">
+	<div class="col-xs-6">
+		<%= link_to new_post_path, class: 'btn btn-success' do %>
+  		<i class="glyphicon glyphicon-plus"></i> Add a lost/stranded pet
+		<% end %>
+	</div>
+	<div class="col-xs-6">
+		<%= link_to new_user_path, class: 'btn btn-success' do %>
+  		<i class="glyphicon glyphicon-plus"></i> Sign Up to report a lost or stranded pet!
+		<% end %>
+	</div>
+</div>
