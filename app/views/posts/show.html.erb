@@ -1,6 +1,6 @@
-<h1> <%= @post.title %> that you reported!</h1>
+<h1><%= @post.title %></h1>
 
-<p>Your post title <%= @post.title %>, was reported as <%= @post.body %>.</p>
+<p>Your post was reported as <%= @post.body %>.</p>
 
 <%=  link_to "Edit your post!", edit_post_path %>
 
