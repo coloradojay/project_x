@@ -2,6 +2,7 @@
 
 <p>Your post was reported as <%= @post.body %>.</p>
 <p>Added by <%= @post.user.name %> -- <%= @post.date_added %> </p>
+<p><%= image_tag @post.image.url if @post.image.url(:small).present? %></p>
 
 <section>
     <h3>Comments</h3>

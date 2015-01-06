@@ -5,6 +5,8 @@
 	<%= f.input :pet_type, placeholder: 'Pet Type' %>
 	<%= f.input :body, placeholder: 'Body' %>
 
+	<%= f.file_field :image %>
+
 	<%= f.label :user %>
 	<%= f.collection_select :user, User.all, :id, :name %>
 

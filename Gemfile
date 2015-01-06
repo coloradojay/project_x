@@ -21,6 +21,16 @@ gem 'bootstrap-sass', '~> 3.3.1.0'
 gem 'autoprefixer-rails'
 # Use simpleforms
 gem 'simple_form'
+# Use carrierwave
+gem 'carrierwave'
+gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
+# For Amazon S3
+gem 'fog'
+# For post-upload image processing
+gem 'mini_magick'
+# For use with securing figaro
+gem 'figaro'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

@@ -7,6 +7,8 @@ class Post
   field :body, type: String
   field :url, type: String
 
+  mount_uploader :image, AvatarUploader
+
   def date_added
   	self.created_at.localtime.strftime("%-m/%-d/%Y | %l:%M %p")
   end
