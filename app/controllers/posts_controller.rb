@@ -25,6 +25,7 @@ class PostsController < ApplicationController
 
   def show
   	@post = Post.find(params[:id])
+  	@comment = Comment.new
   end
 
   def update # this action is responsible for saving an update to a specific post
@@ -47,6 +48,6 @@ class PostsController < ApplicationController
 
   private
 		def post_params
-		 	params.require(:post).permit(:title, :body, :url)
+		 	params.require(:post).permit(:title, :body, :url, :user)
 	end
 end

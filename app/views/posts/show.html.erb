@@ -1,6 +1,29 @@
 <h1><%= @post.title %></h1>
 
 <p>Your post was reported as <%= @post.body %>.</p>
+<p>Added by <%= @post.user.name %> -- <%= @post.date_added %> </p>
+
+<section>
+    <h3>Comments</h3>
+    <div>
+        <% @post.comments.each do |comment| %>        
+            <div>
+                <p><%= comment.body %> -- added: <%= comment.date_added %></p>
+            </div>
+        <% end %>
+    </div>
+</section>
+
+<section>
+    <h3>Add a new comment</h3>      
+    <%= form_for [@post, @comment] do |f| %>
+        <div>
+            <%= f.label :body, "Comment:" %>
+            <%= f.text_area :body%>
+        </div>
+        <%= f.submit "Add a comment!" %>
+    <% end %>
+</section>
 
 <%=  link_to "Edit your post!", edit_post_path %>
 
