@@ -25,6 +25,7 @@ class PostsController < ApplicationController
 
   def show
   	@post = Post.find(params[:id])
+  	# Adding new comments to be posted onto a single post
   	@comment = Comment.new
   end
 
