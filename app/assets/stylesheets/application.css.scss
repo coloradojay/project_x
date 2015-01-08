@@ -66,7 +66,8 @@ p {
 
 /* Links */
 a {
-    color: #f85c37;
+		color: #8A0917;
+    // color: #f85c37;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -78,7 +79,8 @@ a {
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
+		color: #3498db;
+    // color: #7b7b7b;
     text-decoration: none;
     outline: 0;
 }
@@ -115,7 +117,8 @@ a:after {
 }
 
 .navbar-inverse .navbar-nav > .active > a {
-	background: #ff7878
+	background: #3498db;
+	// background: #ff7878
 }
 
 .navbar-inverse .navbar-brand {
@@ -126,7 +129,8 @@ a:after {
 }
 
 .navbar-inverse .navbar-brand i {
-	color: #ff7878;
+	color: #3498db;
+	// color: #ff7878;
 	font-size: 22px;
 	letter-spacing: 1px;
 }
@@ -216,9 +220,10 @@ a:after {
 
 /* Red Wrap */
 #r {
-	background: #ff7878;
-	padding-top: 35px;
-	padding-bottom: 35px;
+	background: #3498db;
+	// background: #ff7878;
+	// padding-top: 35px;
+	padding-bottom: 90px;
 }
 
 #r h4 {
@@ -263,7 +268,8 @@ a:after {
 }
 
 .footer i:hover {
-	color: #ff7878;
+	color: #3498db;
+	// color: #ff7878;
 }
 
 /****** SECTIONS *****/
@@ -277,7 +283,8 @@ a:after {
 }
 
 .w i {
-	color: #ff7878;
+	color: #3498db;
+	// color: #ff7878;
 	font-size: 30px;
 }
 
