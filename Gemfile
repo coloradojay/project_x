@@ -19,6 +19,8 @@ gem 'better_errors', group: :development
 gem 'bootstrap-sass', '~> 3.3.1.0'
 # For use with Bootstrap sass
 gem 'autoprefixer-rails'
+# Use font-awesome with bootstrap
+gem "font-awesome-rails"
 # Use simpleforms
 gem 'simple_form'
 # Use carrierwave
@@ -30,7 +32,8 @@ gem 'fog'
 gem 'mini_magick'
 # For use with securing figaro
 gem 'figaro'
-
+# Use bcrypt for encryption
+gem 'bcrypt', '~> 3.1.9'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
