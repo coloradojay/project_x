@@ -18,8 +18,10 @@
 		<%= f.file_field :image, placeholder: 'Add an Image' %>
 		</div>
 		<br />
-	<%= f.submit "Add User!" %>
+	<%= f.submit "Add User!", :class => "btn btn-primary col-md-2" %>
+	<br />
+	<br />
 
 <% end %>
 
-<%= link_to "Back to the list!", posts_path %>
+<%= link_to "Back to the list!", posts_path, :class => "btn btn-success" %>
