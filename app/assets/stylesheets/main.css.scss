@@ -1,25 +1,4 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- *= require 'main'
- */
-
- @import "bootstrap-sprockets";
- @import "bootstrap";
- @import "font-awesome";
-
- /*
  * Author: Carlos Alvarez
  * URL: http://alvarez.is
  *
@@ -253,25 +232,21 @@ a:after {
 
 
 /* Footer Wrap */
-
-
 .footer {
-  // position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 75px;
-  background-color: #2d2d2d;
-  padding: 15px;
+	background: #2d2d2d;
+	// padding-top: 20px;
+	// padding-bottom: 20px;
 }
+
 .footer i {
 	color: #bdbdbd;
 	font-size: 30px;
-	// padding: 20px;
+	padding: 20px;
 }
 
 .footer i:hover {
 	color: #3498db;
+	// color: #ff7878;
 }
 
 /****** SECTIONS *****/
@@ -305,10 +280,6 @@ a:after {
 	width: 75%;
 }
 
-.wb ul li {
-	text-decoration: none;
-}
-
 .desc {
 	padding-top: 35px;
 }
@@ -321,36 +292,4 @@ a:after {
 	color: #ff7878;
 	font-size: 12px;
 	padding: 5px;
-}
-
-
-.navbar {
-	font-weight: 800;
-	font-size: 14px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-.navbar-inverse {
-	background: #2d2d2d;
-	border-color: #2d2d2d;
-}
-
-.navbar-inverse .navbar-nav > .active > a {
-	background: #3498db;
-	// background: #ff7878
-}
-
-.navbar-inverse .navbar-brand {
-	color: #999999;
-	font-weight: bolder;
-	font-size: 22px;
-	letter-spacing: 1px;
-}
-
-.navbar-inverse .navbar-brand i {
-	color: #3498db;
-	// color: #ff7878;
-	font-size: 22px;
-	letter-spacing: 1px;
 }

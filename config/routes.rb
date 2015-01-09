@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'static_pages/home'
-
   resources :users
   resources :posts do
     resources :comments, only: :create

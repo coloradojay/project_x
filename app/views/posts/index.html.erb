@@ -1,27 +1,38 @@
-<h1>Today's Reported Lost Pets!</h1>
+	<div class="container wb">
+		<div class="row centered">
+			<h1>Today's Reported Lost Pets!</h1>
+			<br><br>
+			<div class="col-lg-12">
+				<div class="col-lg-2">
+				</div>
+				<div class="col-lg-10">
+					<ul>
+						<% @posts.each do |p| %>
+							<li>
+								<strong><%= p.title %></strong> -- <%= p.body %> 
+								<%= link_to "More info", post_path(p) %>
+							</li>
+						<% end %>
+					</ul>
+					<p><br/><br/></p>
+				</div>
+				<div class="col-lg-2">
+				</div>
+			</div>
+		</div><!-- row -->
 
-
-<ul>
-
-	<% @posts.each do |p| %>
-
-		<li>
-			<strong><%= p.title %></strong> -- <%= p.body %> 
-			<%= link_to "More info", post_path(p) %>
-		</li>
-		
-	<% end %>
-
-</ul>
-<div class="row">
-	<div class="col-xs-6">
-		<%= link_to new_post_path, class: 'btn btn-success' do %>
-  		<i class="glyphicon glyphicon-plus"></i> Add a lost/stranded pet
-		<% end %>
-	</div>
-	<div class="col-xs-6">
-		<%= link_to new_user_path, class: 'btn btn-success' do %>
-  		<i class="glyphicon glyphicon-plus"></i> Sign Up to report a lost or stranded pet!
-		<% end %>
-	</div>
-</div>
+		<div class="row centered">
+			<div class="col-lg-12">
+				<div class="col-lg-6">
+					<%= link_to new_post_path, class: 'btn btn-success' do %>
+			  		<i class="glyphicon glyphicon-plus"></i> Add a lost/stranded pet
+					<% end %>
+				</div>
+				<div class="col-lg-6">
+					<%= link_to new_user_path, class: 'btn btn-success' do %>
+			  		<i class="glyphicon glyphicon-plus"></i> Sign Up to report a lost or stranded pet!
+					<% end %>
+				</div>
+			</div>
+		</div><!-- row -->
+	</div><!-- container -->
