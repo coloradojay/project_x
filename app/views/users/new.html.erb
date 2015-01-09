@@ -1,12 +1,23 @@
-<h1>New User</h1>
+<h1>Sign Up for an Account</h1>
+
+<ul>
+  <% @user.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>  
+  <% end %>
+
+</ul>
 
 <%= simple_form_for @user do |f| %>
 		
 		<%= f.input :user_name, placeholder: 'User Name' %>		
 		<%= f.input :name, placeholder: 'First & Last Name' %>
 		<%= f.input :email, placeholder: 'Email' %>
-		<%= f.input :image, placeholder: 'Add an Image' %>
-
+		<%= f.input :password, placeholder: 'Password' %>
+		<%= f.input :password_confirmation, placeholder: 'Confirm Your Password' %>
+		<div>
+		<%= f.file_field :image, placeholder: 'Add an Image' %>
+		</div>
+		<br />
 	<%= f.submit "Add User!" %>
 
 <% end %>

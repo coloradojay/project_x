@@ -15,6 +15,12 @@
         <li><a href="/posts">Lost Pet Report</a></li>
         <li><a href="/posts/new">New Post</a></li>
         <li><a href="/users/new">Sign Up</a></li>
+        <li><% if current_user %>
+            <%= link_to "Log out!", logout_path, method: :delete %>
+            <% else %>
+            <%= link_to "Log in!", login_path %>
+            <% end %>
+        </li>
       </ul>
     </div>
   </div>

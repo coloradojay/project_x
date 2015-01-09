@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   resources :posts do
     resources :comments, only: :create
   end
+  get "/signup" => "users#new"
+  get "/login" => "sessions#new"
+  post "/login" => "sessions#create"
+  delete "/logout" => "sessions#destroy"
 
   root 'static_pages#home'
 

@@ -5,13 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-posts = Post.create([
-	{title: "Bulldog woes", pet_type: "Dog", body: "Please help find my lost Bulldog" },
-	{title: "Lost Bird", pet_type: "Dog", body: "Lost Bird, responds to Louie"}
-	])
+# posts = Post.create([
+# 	{title: "Bulldog woes", pet_type: "Dog", body: "Please help find my lost Bulldog" },
+# 	{title: "Lost Bird", pet_type: "Dog", body: "Lost Bird, responds to Louie"}
+# 	])
 
-users = User.create([
-	{user_name: "jason", name: "Jason", email: "jason@jason.com", image: "Image to go here" },
-	{user_name: "bob", name: "Bob", email: "bob@bob.com", image: "Image to go here"}
-	])
+# users = User.create([
+# 	{user_name: "jason", name: "Jason", email: "jason@jason.com", image: "Image to go here" },
+# 	{user_name: "bob", name: "Bob", email: "bob@bob.com", image: "Image to go here"}
+# 	])
 
