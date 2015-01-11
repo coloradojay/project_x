@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :comments, only: :create
   end
   get "/signup" => "users#new"
+  get "/profile" => "users#show"
   get "/login" => "sessions#new"
   post "/login" => "sessions#create"
   delete "/logout" => "sessions#destroy"
