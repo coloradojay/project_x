@@ -1,16 +1,8 @@
-@charset "UTF-8";/*
- * Author: Carlos Alvarez
- * URL: http://alvarez.is
- *
- * Project Name: SPOT - Free Bootstrap 3 Theme
- * Version: 1.0
- * URL: http://blacktie.co
- */
-/* FONTS */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+@charset "UTF-8";/* FONTS */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
 /* OVERALL ASPECT */
-/* line 17, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 8, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 body {
   background-color: #f2f2f2;
   font-family: "Lato";
@@ -23,7 +15,7 @@ body {
 }
 
 /* Titles */
-/* line 31, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 22, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway";
   font-weight: 300;
@@ -31,19 +23,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Paragraph & Typographic */
-/* line 39, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 30, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 p {
   line-height: 28px;
   margin-bottom: 25px;
 }
 
-/* line 44, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 35, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .centered {
   text-align: center;
 }
 
 /* Links */
-/* line 49, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 40, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 a {
   color: #8A0917;
   word-wrap: break-word;
@@ -51,7 +43,7 @@ a {
   transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
-/* line 60, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 51, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 a:hover,
 a:focus {
   color: #3498db;
@@ -59,14 +51,14 @@ a:focus {
   outline: 0;
 }
 
-/* line 67, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 58, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 a:before,
 a:after {
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
-/* line 76, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 67, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 hr {
   display: block;
   height: 1px;
@@ -76,7 +68,7 @@ hr {
   padding: 0;
 }
 
-/* line 86, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 77, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .navbar {
   font-weight: 800;
   font-size: 14px;
@@ -84,18 +76,18 @@ hr {
   padding-bottom: 15px;
 }
 
-/* line 93, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 84, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .navbar-inverse {
   background: #2d2d2d;
   border-color: #2d2d2d;
 }
 
-/* line 98, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 89, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .navbar-inverse .navbar-nav > .active > a {
   background: #3498db;
 }
 
-/* line 102, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 93, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .navbar-inverse .navbar-brand {
   color: #999999;
   font-weight: bolder;
@@ -103,33 +95,21 @@ hr {
   letter-spacing: 1px;
 }
 
-/* line 109, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 100, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .navbar-inverse .navbar-brand i {
   color: #3498db;
   font-size: 22px;
   letter-spacing: 1px;
 }
 
-/*TILT*/
-/* line 116, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
-.tilt {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-/* line 124, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
-.tilt:hover {
-  -webkit-transform: rotate(-10deg);
-  -ms-transform: rotate(-10deg);
-  transform: rotate(-10deg);
-}
-
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
-/* line 136, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 110, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 #headerwrap {
-  background: url(header-bg.jpg) no-repeat center top;
+  background-image: url("https://s3.amazonaws.com/uploads.hipchat.com/39979/1432588/Rl4GJrqe0jkQkRT/header_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
   margin-top: -10px;
   padding-top: 20px;
   text-align: center;
@@ -141,7 +121,7 @@ hr {
   background-size: cover;
 }
 
-/* line 158, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 133, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 #headerwrap h1 {
   margin-top: 100px;
   color: white;
@@ -150,7 +130,7 @@ hr {
   letter-spacing: 3px;
 }
 
-/* line 166, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 141, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 #headerwrap h2 {
   color: white;
   font-size: 40px;
@@ -159,133 +139,184 @@ hr {
   text-transform: uppercase;
 }
 
-/* Dark Grey Wrap */
-/* line 175, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
-#dg {
+/* Dark Gray Wrap */
+/* line 150, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+#dark_gray {
   background: #e0e0e0;
   padding-top: 70px;
   padding-bottom: 70px;
   text-align: center;
 }
 
-/* line 182, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
-#dg h4 {
+/* line 157, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+#dark_gray h4 {
   font-weight: 700;
 }
 
-/* Light Grey */
-/* line 187, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
-#lg {
+/* Light Gray */
+/* line 162, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+#light_gray {
   background: #ebebeb;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
-/* line 194, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
-#lg h4 {
+/* line 169, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+#light_gray h4 {
   font-weight: 700;
 }
 
 /* Red Wrap */
-/* line 200, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
-#r {
+/* line 175, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+#red {
   background: #3498db;
+  padding-bottom: 0px;
 }
 
-/* line 207, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
-#r h4 {
+/* line 182, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+#red h4 {
   color: white;
   font-weight: 700;
 }
 
-/* line 212, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 187, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 #r p {
   color: white;
 }
 
 /* Blue Wrap */
-/* line 218, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 193, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 #blue {
   background: #3498db;
   padding-top: 35px;
   padding-bottom: 35px;
 }
 
-/* line 224, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 199, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+#blue h1 {
+  color: white;
+  font-weight: 300;
+}
+
+/* line 205, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 #blue h4 {
   color: white;
   font-weight: 700;
 }
 
-/* line 229, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 210, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 #blue p {
   color: white;
 }
 
-/* Footer Wrap */
-/* line 236, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
-.footer {
-  background: #2d2d2d;
+/* Navbar */
+/* line 216, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+.navbar {
+  font-weight: 800;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-/* line 242, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 223, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+.navbar-inverse {
+  background: #2d2d2d;
+  border-color: #2d2d2d;
+}
+
+/* line 228, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+.navbar-inverse .navbar-nav > .active > a {
+  background: #3498db;
+}
+
+/* line 232, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+.navbar-inverse .navbar-brand {
+  color: #999999;
+  font-weight: bolder;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+/* line 239, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+.navbar-inverse .navbar-brand i {
+  color: #3498db;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+/* Footer Wrap */
+/* line 248, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+.footer {
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 75px;
+  background-color: #2d2d2d;
+  padding: 15px;
+}
+
+/* line 257, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .footer i {
   color: #bdbdbd;
   font-size: 30px;
-  padding: 20px;
 }
 
-/* line 248, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 263, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .footer i:hover {
   color: #3498db;
 }
 
 /****** SECTIONS *****/
-/* line 255, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 269, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .w {
   padding-top: 35px;
 }
 
-/* line 259, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 273, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .w h4 {
   font-weight: 700;
 }
 
-/* line 263, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 277, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .w i {
   color: #3498db;
   font-size: 30px;
 }
 
-/* line 270, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 284, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .wb {
   padding-top: 35px;
   margin-bottom: 0px;
 }
 
-/* line 275, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 289, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .wb h4 {
   font-weight: 700;
 }
 
-/* line 279, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 293, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .wb img {
   height: 75%;
   width: 75%;
 }
 
-/* line 284, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 298, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+.wb ul li {
+  text-decoration: none;
+}
+
+/* line 302, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .desc {
   padding-top: 35px;
 }
 
-/* line 288, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 306, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .desc h4 {
   font-weight: 700;
 }
 
-/* line 292, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
+/* line 310, /Users/jasondelarosa/wdi/projects/project_x/app/assets/stylesheets/main.css.scss */
 .desc i {
   color: #ff7878;
   font-size: 12px;
