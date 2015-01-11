@@ -22,16 +22,19 @@
 		</div><!-- row -->
 
 		<div class="row centered">
-			<div class="col-lg-12">
-				<div class="col-lg-6">
-					<%= link_to new_post_path, class: 'btn btn-success' do %>
-			  		<i class="glyphicon glyphicon-plus"></i> Add a lost/stranded pet
+				<div class="col-lg-6 col-lg-offset-3">
+					<% if current_user %>
+						<%= link_to new_post_path, class: 'btn btn-success' do %>
+				  		<i class="glyphicon glyphicon-plus"></i> Add a lost/stranded pet
+						<% end %>
+					<% else %>
+						<%= link_to new_user_path, class: 'btn btn-success' do %>
+		  			<i class="glyphicon glyphicon-plus"></i> Sign Up to report a lost or stranded pet!
+						<% end %>
 					<% end %>
 				</div>
-				<div class="col-lg-6">
-					<%= link_to new_user_path, class: 'btn btn-success' do %>
-			  		<i class="glyphicon glyphicon-plus"></i> Sign Up to report a lost or stranded pet!
-					<% end %>
+				<div class="col-lg-6 col-lg-offset-3">
+
 				</div>
 			</div>
 		</div><!-- row -->
