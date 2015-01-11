@@ -36,6 +36,8 @@ gem 'mini_magick'
 gem 'figaro'
 # Use bcrypt for encryption
 gem 'bcrypt', '~> 3.1.9'
+# Use spirt_fingers to help Pry with debugging in development
+gem 'spirit_fingers', :group => :development
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

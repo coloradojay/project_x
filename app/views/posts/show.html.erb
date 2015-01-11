@@ -26,8 +26,18 @@
     <% end %>
 </section>
 
-<%=  link_to "Edit your post!", edit_post_path %>
+<div class="row">
+    <div class="col-lg-4">
+        <% if current_user %>
+            <%=  link_to "Edit your post!", edit_post_path, :class => 'btn btn-success'  %>
+            <%= link_to "Delete this post!", :post, method: :delete, data: { confirm: "Are you sure you want to delete your post?" }, :class => 'btn btn-success'  %>
+            <%= link_to "Back to the list!", posts_path, :class => 'btn btn-success'  %>
+        <% else %>
+            <%= link_to "Back to the list!", posts_path, :class => 'btn btn-success'  %>
+        <% end %>
+    </div>
+</div>
 
-<%= link_to "Delete this post!", :post, method: :delete, data: { confirm: "Are you sure you want to delete your post?" } %>
 
-<%= link_to "Back to the list!", posts_path %>
+
+
