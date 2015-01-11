@@ -107,10 +107,10 @@ hr {
    ========================================================================== */
 
 #headerwrap {
-	background-image: url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1432588/Rl4GJrqe0jkQkRT/header_bg.jpg');
+	background-image: url('https://s3-us-west-1.amazonaws.com/dogfinderapp/header_bg.jpg');
 	background-repeat: no-repeat;
   background-position: right top;
-	margin-top: -10px;
+	margin-top: 10px;
 	padding-top:20px;
 	text-align:center;
 	background-attachment: relative;
@@ -127,6 +127,7 @@ hr {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 
 #headerwrap h1 {
@@ -145,6 +146,9 @@ hr {
 	text-transform: uppercase;
 }
 
+#headerwrap img {
+ 
+}
 /* Dark Gray Wrap */
 #dark_gray {
 	background: #e0e0e0;
