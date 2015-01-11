@@ -1,31 +1,21 @@
 <div class="row">
-<h1>Let's find your pet, please add it to the list!</h1>
+	<h1 class="centered">Let's find your Dog!</h1>
+</div>
 
-				<%= simple_form_for @post do |f| %>
-					<div>
-					<%= f.input :title, placeholder: 'Post Title' %>
-					</div>
-					<div>
-					<%= f.input :pet_type, placeholder: 'Pet Type' %>
-					</div>
-					<div>
-					<%= f.text_area :body, placeholder: 'Body' %>
-					</div>
-					<br />
-					<div>
-					<%= f.file_field :image %>
-					</div>
-					<br />
-					<div>
-					<%= f.label :user %>
-					<%= f.collection_select :user, User.all, :id, :name %>
-					</div>
-					<br />
-					<div>
-					<%= f.submit "Let's find your pet!", :class => 'btn btn-success' %>
-					</div>
-				<% end %>
-				<br />
-				<%= link_to "Back to the list!", posts_path %>
+<div class="row">
+	<div class="col-md-8 col-md-offset-2 form-group">
+		<%= simple_form_for @post do |f| %>
 
+			<%= f.input :title, placeholder: 'Post Title', :class => "form-control" %>
+			<%= f.input :pet_type, placeholder: 'Pet Type', :class => "form-control" %>
+			<%= f.text_area :body, placeholder: 'Body', :class => "form-control" %>
+			<br />
+			<%= f.file_field :image %>
+			<br />
+			<%= f.label :user %>
+			<%= f.collection_select :user, User.all, :id, :name %>
+			<br />
+			<%= f.submit "Let's find your pet!", :class => "btn btn-primary col-md-3" %>
+		<% end %>
+	</div>
 </div>

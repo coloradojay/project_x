@@ -12,9 +12,12 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="/">HOME</a></li>
-        <li><a href="/posts">Lost Pet Report</a></li>
-        <li><a href="/posts/new">New Post</a></li>
-        <li><a href="/users/new">Sign Up</a></li>
+        <li><a href="/posts">Lost Pet Reports</a></li>
+        <% if current_user %>
+          <li><a href="/posts/new">New Post</a></li>
+          <% else %>
+          <li><a href="/users/new">Sign Up</a></li>
+        <% end %>
         <li><% if current_user %>
             <%= link_to "Log out!", logout_path, method: :delete %>
             <% else %>

@@ -1,7 +1,9 @@
 <h1><%= @post.title %></h1>
 
 <p>Your post was reported as <%= @post.body %>.</p>
-<p>Added by <%= @post.user.name %> -- <%= @post.date_added %> </p>
+<% if current_user %>
+    <p>Added by <%= @post.user.name %> -- <%= @post.date_added %> </p>
+<% end %>
 <p><%= image_tag @post.image.url(:small) if @post.image.url(:small).present? %></p>
 
 <section>
