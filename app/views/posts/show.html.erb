@@ -11,6 +11,7 @@
 
         <section>
             <h4>Comments</h4>
+
             <div>
                 <% @post.comments.each do |comment| %>        
                     <div>
@@ -21,7 +22,12 @@
         </section>
 
         <section>
-            <h4>Add a new comment</h4>      
+            <h4>Add a new comment</h4>
+                <ul>
+                    <% @comment.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>  
+                    <% end %>
+                </ul>    
             <%= form_for [@post, @comment] do |f| %>
                 <div>
                     <%= f.label :body, "Comment:" %>

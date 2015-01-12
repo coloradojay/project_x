@@ -4,6 +4,12 @@
 
 <div class="row">
 	<div class="col-md-8 col-md-offset-2 form-group">
+
+		<ul>
+		  <% @post.errors.full_messages.each do |msg| %>
+		    <li><%= msg %></li>  
+		  <% end %>
+		</ul>
 		<%= simple_form_for @post do |f| %>
 
 			<%= f.input :title, placeholder: 'Post Title', :class => "form-control" %>
