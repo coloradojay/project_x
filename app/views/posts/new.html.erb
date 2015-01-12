@@ -12,9 +12,7 @@
 			<br />
 			<%= f.file_field :image %>
 			<br />
-			<%= f.label :user %>
-			<%= f.collection_select :user, User.all, :id, :name %>
-			<br />
+
 			<%= f.submit "Let's find your pet!", :class => "btn btn-primary col-md-3" %>
 		<% end %>
 	</div>

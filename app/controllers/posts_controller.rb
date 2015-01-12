@@ -14,6 +14,7 @@ class PostsController < ApplicationController
 
   def create
   	@post = Post.new(post_params)
+  	@post.user = current_user
 		# if the new post creation & save is sucessful, we want to redirect to the index
 		if @post.save
 			redirect_to posts_path

@@ -29,11 +29,11 @@ class UsersController < ApplicationController
 	# Retrieving a specific user from the database
 		@user = User.find(params[:id])
 
-		if @user.update_attributes(params.require(:user).permit(:user_name, :name, :email, :image))
-			redirect_to users_path
+		if @user.update_attributes(user_params)
+			redirect_to users_path, alert: 'Profile Successfully Updated'
 		else
 		#if unsuccessful, show to the edit page
-		render "edit"
+		render "edit", alert: 'Unable to update Profile'
 	 end
   end
 
