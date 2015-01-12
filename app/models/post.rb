@@ -13,6 +13,9 @@ class Post
   	self.created_at.localtime.strftime("%-m/%-d/%Y | %l:%M %p")
   end
 
+  #validating post body is present
+  validates :body, presence: true
+
   belongs_to :user
   embeds_many :comments
 end

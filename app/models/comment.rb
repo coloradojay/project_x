@@ -8,5 +8,8 @@ class Comment
   	self.created_at.localtime.strftime("%-m/%-d/%Y | %l:%M %p")
   end
 
+  #validating body is present
+  validates :body, presence: true
+
   embedded_in :post
 end
