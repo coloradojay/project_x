@@ -14,6 +14,7 @@ class Post
   end
 
   #validating post body is present
+  validates :title, presence: true
   validates :body, presence: true
 
   belongs_to :user
