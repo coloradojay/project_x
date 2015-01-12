@@ -3,6 +3,7 @@
     <h2 class="centered">Report Title: <%= @post.title %></h2>
     <div class="row">
       <div class="col-md-12 cold-md-offset-2">
+        <h4>Breed: <%= @post.dog_breed %>.</h4>
         <h4>Report Body: <%= @post.body %>.</h4>
         <% if current_user %>
           <p>Added by <%= @post.user.name %> -- <%= @post.date_added %> </p>

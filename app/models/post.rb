@@ -3,7 +3,7 @@ class Post
   include Mongoid::Timestamps
 
   field :title, type: String
-  field :pet_type, type: String
+  field :dog_breed, type: String
   field :body, type: String
   field :url, type: String
 

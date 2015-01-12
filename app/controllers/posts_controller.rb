@@ -34,7 +34,7 @@ class PostsController < ApplicationController
 		# Retrieving a specific post from the database
 		@post = Post.find(params[:id])
 
-		if @post.update_attributes(params.require(:post).permit(:title, :body))
+		if @post.update_attributes(params.require(:post).permit(:title, :dog_breed, :body))
 			redirect_to posts_path
 		else
 			#if unsuccessful, show to the edit page
@@ -50,6 +50,6 @@ class PostsController < ApplicationController
 
   private
 		def post_params
-		 	params.require(:post).permit(:title, :body, :user, :image)
+		 	params.require(:post).permit(:title, :dog_breed, :body, :user, :image)
 	end
 end
