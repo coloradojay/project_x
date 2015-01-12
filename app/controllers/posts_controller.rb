@@ -10,6 +10,7 @@ class PostsController < ApplicationController
 	def edit
 		# this action is responsible for retrieving a specific bean
 		@post = Post.find(params[:id])
+		@post.user = current_user
 	end
 
   def create

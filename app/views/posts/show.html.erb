@@ -16,7 +16,7 @@
             <div>
                 <% @post.comments.each do |comment| %>        
                     <div>
-                        <p><%= comment.body %> -- added: <%= comment.date_added %></p>
+                        <p><%= comment.body %> -- added by: <%= comment.date_added %></p>
                     </div>
                 <% end %>
             </div>
@@ -45,7 +45,7 @@
 
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-    <% if current_user %>
+    <% if current_user.name == @post.user.name %>
         <%=  link_to "Edit your post!", edit_post_path, :class => 'btn btn-success'  %>
         <%= link_to "Delete this post!", :post, method: :delete, data: { confirm: "Are you sure you want to delete your post?" }, :class => 'btn btn-success'  %>
         <%= link_to "Back to the list!", posts_path, :class => 'btn btn-success'  %>

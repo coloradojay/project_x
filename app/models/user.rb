@@ -1,5 +1,6 @@
 class User
   include Mongoid::Document
+  include Mongoid::Timestamps
 
   field :user_name, type: String
   field :name, type: String
@@ -25,7 +26,7 @@ class User
   end
 
   # Validating name, email and password
-  validates :user_name, presence: true, uniqueness: true
+  validates :user_name, presence: true, uniqueness: true, on: :create
   validates :name, presence: true
   validates :email, presence: true, uniqueness: { case_sensitive: false }, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i }
   validates :password, presence: true, length: { in: 6..20 } , confirmation: true
