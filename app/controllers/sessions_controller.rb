@@ -3,12 +3,12 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by(email: params[:login][:email])
+    user = User.find_by(email: params[:login][:email]) unless params[:login][:email].empty?
     if user && user.authenticate(params[:login][:password])
       session[:user_id] = user.id.to_s
       redirect_to user_path(current_user)
     else
-      render "sessions/new", alert: 'Check your shit playa'
+      render "sessions/new", alert: 'Unable to login'
     end
   end
 
