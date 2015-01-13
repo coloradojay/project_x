@@ -29,7 +29,8 @@ class User
   validates :user_name, presence: true, uniqueness: true, on: :create
   validates :name, presence: true
   validates :email, presence: true, uniqueness: { case_sensitive: false }, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i }
-  validates :password, presence: true, length: { in: 6..20 } , confirmation: true
+  validates :password, presence: true, length: { :within => 6..40 }, confirmation: true, :allow_blank => false, :on => :create
+  validates :password, presence: true, length: { :within => 6..40 }, confirmation: true, :allow_blank => true, :on => :update
   
 
   has_many :posts, dependent: :destroy

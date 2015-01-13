@@ -30,7 +30,7 @@ class UsersController < ApplicationController
 		@user = User.find(params[:id])
 
 		if @user.update_attributes(user_params)
-			redirect_to users_path, alert: 'Profile Successfully Updated'
+			redirect_to user_path, alert: 'Profile Successfully Updated'
 		else
 		#if unsuccessful, show to the edit page
 		render "edit", alert: 'Unable to update Profile'

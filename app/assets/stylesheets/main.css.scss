@@ -127,7 +127,6 @@ hr {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 
 #headerwrap h1 {
@@ -147,8 +146,10 @@ hr {
 }
 
 #headerwrap img {
- 
+	-webkit-filter: blur(3px); 
+    filter: blur(3px); 
 }
+
 /* Dark Gray Wrap */
 #dark_gray {
 	background: #e0e0e0;
@@ -200,6 +201,7 @@ hr {
 #r p {
 	color: white;
 }
+
 
 /* Blue Wrap */
 
@@ -324,4 +326,25 @@ hr {
 	color: #ff7878;
 	font-size: 12px;
 	padding: 5px;
+}
+#map-container {
+   height: 400px;
+   border-radius: 16px 16px;
+   border-color: #fff;
+   border-style: solid;
+   box-shadow: 2px 2px 10px #B1B1B1;
+   margin-top: 25px;
+   border-width: 7px;
+ }
+ #map-canvas {
+   height: 384px;
+   width: 100%;
+ }
+ /* Bootstrap Css Map Fix*/
+#map-container #map-canvas img {
+  max-width: none;
+}
+/* Bootstrap Css Map Fix*/
+#map-container #map-canvas label {
+  width: auto; display:inline;
 }

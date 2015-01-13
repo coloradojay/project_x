@@ -40,6 +40,8 @@ gem 'figaro'
 gem 'bcrypt', '~> 3.1.9'
 # Use spirt_fingers to help Pry with debugging in development
 gem 'spirit_fingers', :group => :development
+# Use geocoder to get user entered addresses for Maps API
+gem 'geocoder'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
