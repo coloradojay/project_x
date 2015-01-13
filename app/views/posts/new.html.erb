@@ -13,8 +13,12 @@
 		<%= simple_form_for @post do |f| %>
 
 			<%= f.input :title, placeholder: 'Post Title', :class => "form-control" %>
-			<%= f.input :dog_breed, placeholder: 'Breed', :class => "form-control" %>
-			<%= f.text_area :body, placeholder: 'Body', :class => "form-control" %>
+			<div>
+			<%= f.label :dog_breed, "Dog Breed" %><br />
+			<%= f.select :dog_breed, options_from_collection_for_select(DOG_BREED, "to_s", "to_s"), :class => "form-control" %>
+			</div>
+			<br />
+			<%= f.text_area :body, placeholder: 'Report', :class => "form-control" %>
 			<br />
 			<%= f.file_field :image %>
 			<br />

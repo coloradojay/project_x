@@ -1,9 +1,10 @@
 <div class="row">
-  <div class="col-md-8 col-md-offset-2">
-    <h2 class="centered">Report Title: <%= @post.title %></h2>
+  <div class="col-md-10 col-md-offset-1">
+    <h2 class="centered">Let's find that lost pooch!</h2>
     <div class="row">
       <div class="col-md-12">
         <div class="col-md-6">
+          <h4>Report Title: <%= @post.title %></h4>
           <h4>Report: <%= @post.body %>.</h4>
           <h4>Breed: <%= @post.dog_breed %>.</h4>
           <% if current_user %>
@@ -56,6 +57,7 @@
           
         </div>
         <div class="col-md-6">
+          <h4 class="centered">Last seen at:</h4>
           <div id="map-container">
             <div id="map-canvas"></div>
           </div>
