@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id.to_s
       redirect_to user_path(current_user)
     else
-      redirect_to login_path
+      render "sessions/new", alert: 'Check your shit playa'
     end
   end
 

@@ -7,7 +7,7 @@
 		<div class="row">
 			
 			<div class="col-md-6">
-				<p><%= image_tag @user.image.url(:small) if @user.image.url(:small).present? %></p>
+				<p><%= image_tag @user.avatar.url(:small) if @user.avatar.url(:small).present? %></p>
 			</div>
 			
 			<div class="col-md-4">

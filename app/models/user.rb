@@ -5,7 +5,7 @@ class User
   field :user_name, type: String
   field :name, type: String
   field :email, type: String
-  mount_uploader :image, AvatarUploader
+  mount_uploader :avatar, AvatarUploader
   field :password_digest, type: String
   attr_reader :password
 
