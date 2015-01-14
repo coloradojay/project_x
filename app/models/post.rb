@@ -8,8 +8,8 @@ class Post
   field :body, type: String
   field :url, type: String
   field :coordinates, :type => Array
-  field :address, :type => Array
-  field :street_address, :type => String
+  field :address, :type => String
+
 
   mount_uploader :image, AvatarUploader
 

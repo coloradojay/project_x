@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+include PostsHelper
   def index
   	@posts = Post.all
   end
@@ -29,6 +30,8 @@ class PostsController < ApplicationController
   	@post = Post.find(params[:id])
   	# Adding new comments to be posted onto a single post
   	@comment = Comment.new
+  	address = @post.address
+  	google_maps(address)
   end
 
   def update # this action is responsible for saving an update to a specific post
@@ -51,6 +54,6 @@ class PostsController < ApplicationController
 
   private
 		def post_params
-		 	params.require(:post).permit(:title, :dog_breed, :body, :user, :image, :coordinates, :street_address, :address, :geocode)
+		 	params.require(:post).permit(:title, :dog_breed, :body, :user, :image, :coordinates, :address, :geocode)
 	end
 end

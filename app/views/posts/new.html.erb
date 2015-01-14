@@ -18,6 +18,7 @@
 			<%= f.select :dog_breed, options_from_collection_for_select(DOG_BREED, "to_s", "to_s"), :class => "form-control" %>
 			</div>
 			<br />
+			<%= f.input :address, placeholder: 'Address', :class => "form-control" %>
 			<%= f.text_area :body, placeholder: 'Report', :class => "form-control" %>
 			<br />
 			<%= f.file_field :image %>
