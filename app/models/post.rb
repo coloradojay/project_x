@@ -25,6 +25,7 @@ class Post
   #validating post body is present
   validates :title, presence: true
   validates :body, presence: true
+  validates :address, presence: true
 
   belongs_to :user
   embeds_many :comments

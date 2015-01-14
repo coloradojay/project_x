@@ -7,7 +7,7 @@
 				<%= simple_form_for @post do |f| %>
 					<%= f.input :title, placeholder: 'Report Title', :class => "form-control" %>
 					<%= f.input :dog_breed, placeholder: 'Dog Breed', :class => "form-control" %>	
-					<%= f.input :body, placeholder: 'Report Body', :class => "form-control" %>
+					<%= f.text_area :body, placeholder: 'Report Body', :class => "form-control" %>
 					<%= f.file_field :image, placeholder: 'Add/Update an Image' %>
 					<br />
 					<%= f.submit "Update Post", :class => "btn btn-primary col-md-2" %>
