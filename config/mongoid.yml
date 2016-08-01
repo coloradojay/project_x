@@ -78,6 +78,9 @@ production:
      # Use environment variables or a config file to keep your
      # credentials safe e.g. <%= ENV['MONGOLAB_URI'] %>.
      uri: <%= ENV['MONGOLAB_URI'] %>
+     username: <%= ENV['MONGOLAB_USERNAME'] %>
+     password: <%= ENV['MONGOLAB_PASSWORD'] %>
+
 
      options:
        # max_retries specifies the number of times to attempt

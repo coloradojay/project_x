@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.1.3'
+ruby '2.3.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '4.2.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -24,7 +24,7 @@ gem 'bootstrap-sass', '~> 3.3.1.0'
 # For use with Bootstrap sass
 gem 'autoprefixer-rails'
 # Use font-awesome with bootstrap
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 # Use simpleforms
 gem 'simple_form'
 # Use carrierwave
@@ -46,6 +46,7 @@ gem 'geocoder'
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+gem 'json'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
